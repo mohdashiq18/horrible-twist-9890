@@ -55,9 +55,12 @@ export default function BasicUsage() {
             {!next ? <FormControl>
               <FormLabel>Email*</FormLabel>
               <Input borderRadius="2px" ref={initialRef} />
-            </FormControl> : <FormControl>
+            </FormControl> :sign? <FormControl>
               <FormLabel>Password*</FormLabel>
               <Input type={pass ? "password" : "text"} borderRadius="2px" ref={initialRef} />
+            </FormControl>:<FormControl>
+              <FormLabel>Email*</FormLabel>
+              <Input borderRadius="2px" ref={initialRef} />
             </FormControl>}
 
             {!next ? <FormControl>

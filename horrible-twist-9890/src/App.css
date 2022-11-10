@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -12,7 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.active{
+  color: teal;
+  border-bottom: 1px solid black;
+}
+.Nav:hover{
+  color: teal;
+  border-bottom: 1px solid black;
+}
+.active:hover{
+  color: teal;
+  border-bottom: 1px solid black;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
