@@ -4,6 +4,7 @@ import { Nav } from './TopNaerbar/TopNav';
 import BasicUsage from './MidNavbar/MidNavbar';
 import { FixNavbar } from './FixNavbar/FixNavbar';
 import { FrontBody } from './FrontBody/FrontBody';
+import { Footer } from './Footer/Footer';
 
 // eslint-disable-next-line
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <BasicUsage/>
       <FixNavbar/>
       <FrontBody/>
+      <Footer/>
     </div>
   );
 }
