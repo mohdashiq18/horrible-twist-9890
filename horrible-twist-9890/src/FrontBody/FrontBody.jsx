@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Grid,Image,Text } from "@chakra-ui/react"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { ArrowRightIcon, ArrowLeftIcon } from '@chakra-ui/icons'
+import { ChevronLeftIcon,ChevronRightIcon } from '@chakra-ui/icons'
 
 export const FrontBody=()=>{
 const Ima=["https://images.ctfassets.net/5de70he6op10/sElVOkh1LlYRV8lFchscj/3fa66885dac24294a26ad182591b8639/ALiving_HPG_LS_01-1.jpg?w=2640&q=80&fm=webp","https://images.ctfassets.net/5de70he6op10/4oTq1foXQNa8hecONKjGA6/a091e50197f15deccb8f606f78358de6/ALiving_HPG_LS_01-2_2x.jpg?w=2640&q=80&fm=webp","https://images.ctfassets.net/5de70he6op10/3no3vcSJTVoCfU0Xmz31Vn/e2f584c43ba1ab614e3376db991de762/ALiving_HPG_LS_01-3_2x.jpg?w=2640&q=80&fm=webp"]
@@ -41,8 +41,8 @@ const imgData=[["https://images.urbndata.com/is/image/Anthropologie/411201756019
                 <Image  src={Ima[count]}/>
             </Grid>
             <Flex marginTop="-18rem" justifyContent="space-between">
-                <button style={{backgroundColor:"white",padding:"6px"}} disabled={count<=0} onClick={()=>setCount(count-1)}>{<ArrowLeftIcon/>}</button>
-                <button style={{backgroundColor:"white",padding:"6px"}} disabled={count>=2} onClick={()=>setCount(count+1)}>{<ArrowRightIcon/>}</button>
+                <button style={{backgroundColor:"white",padding:"6px"}} disabled={count<=0} onClick={()=>setCount(count-1)}>{<ChevronLeftIcon fontSize="2xl"/>}</button>
+                <button style={{backgroundColor:"white",padding:"6px"}} disabled={count>=2} onClick={()=>setCount(count+1)}>{<ChevronRightIcon fontSize="2xl"/>}</button>
             </Flex>
             <Flex justifyContent="space-around" marginTop="200px">
             <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop gifts for the home </Link>
