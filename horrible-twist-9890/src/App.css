@@ -6,7 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.scroll{
+  /* border: 1px solid black; */
+  height: 395px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.pruductBox:hover{
+  cursor: pointer;
+  border: 1px solid teal;
+  color: teal;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

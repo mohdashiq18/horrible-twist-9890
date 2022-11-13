@@ -11,30 +11,16 @@ import {
   Image
 } from "@chakra-ui/react";
 import { FaFacebookSquare,FaInstagram,FaPinterest,FaTwitter } from 'react-icons/fa';
+
 import {EmailIcon,LinkIcon} from "@chakra-ui/icons"
+import { About } from "../About";
 
 export const Footer = () => {
   return (
     <>
-      <Box pl={20} pr={20}>
-        <Text fontSize="xl">About Us</Text>
-        <Text mt={6} fontSize="sm">
-          Our mission at Anthropologie has always been to surprise and delight
-          you with unexpected, distinctive finds for your closet and home. We
-          source and craft all of our products with care, ensuring that any
-          treasure you find at Anthropologie is unique, just like you. Explore
-          our dress shop to find styles and fits perfect for any occasion, from
-          cocktail parties to weddings to casual daytime silhouettes. Browse
-          party skirts, wide-leg pants and jeans, and blouses that will turn
-          heads. Complete your look with uncommon accessories—think only-here
-          slides and head-turning totes. Discover our expansive home
-          collections, from furniture to curtains, decorative pillows to duvets,
-          wall art to Moroccan-inspired rugs. Looking for a housewarming gift?
-          Try a coffee table book, original glassware or a set of coasters
-        </Text>
-      </Box>
+      {/* <About/> */}
       <Box
-        mt={20}
+        mt={10}
         backgroundColor="#faf9f7"
         borderTop="1px solid #c2c0bc"
         pt={6}
@@ -48,7 +34,7 @@ export const Footer = () => {
                 events and<br/> much more!
               </Text>
             </Box>
-            <Box>
+            <Box >
               <FormControl>
                 <FormLabel fontSize="sm">Email Address*</FormLabel>
                 <Flex>

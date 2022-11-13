@@ -15,10 +15,12 @@ import {
   Text,
   Link
 } from '@chakra-ui/react'
+
 import React, { useState } from "react"
-import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import { Checkbox, CheckboxGroup,Image} from '@chakra-ui/react'
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { InfoOutlineIcon } from '@chakra-ui/icons'
+import Avter from './TopAvtar'
 
 export default function BasicUsage() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -29,7 +31,7 @@ export default function BasicUsage() {
   const [sign,setSign] =useState(true)
   return (
     <>
-
+       
       <Flex flexDirection="row-reverse" padding={2} gap="20px" backgroundColor="#f5f5f5">
         <Link style={{ paddingRight: "50px", fontSize: "14px", color: "teal" }} onClick={onOpen}>Sign In / Sign Up</Link>
         <p style={{ fontSize: "14px", color: "teal" }}>English ($)</p>

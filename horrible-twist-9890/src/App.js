@@ -6,16 +6,14 @@ import { FixNavbar } from './FixNavbar/FixNavbar';
 import { FrontBody } from './FrontBody/FrontBody';
 import { Footer } from './Footer/Footer';
 
+import AllRoutes from './AllRoutes/Routers';
+
 // eslint-disable-next-line
 function App() {
   return (
     <div className="App">
-      
-      <Nav/>
-      <BasicUsage/>
-      <FixNavbar/>
-      <FrontBody/>
-      <Footer/>
+      <AllRoutes/>
+    
     </div>
   );
 }
