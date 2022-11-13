@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Box } from '@chakra-ui/react'
+import { Box,Image } from '@chakra-ui/react'
 import { Flex } from '@chakra-ui/react'
 import { ArrowRightIcon, ArrowLeftIcon } from '@chakra-ui/icons'
 
@@ -19,6 +19,7 @@ export const Nav = () => {
   }
   // eslint-disable-next-line
   return <>
+ 
     <Box bg={NavColor[count]} w='100%' p={3} color='white'>
       <Flex color='white' justifyContent='space-between' gap="20">
         <button style={{ background: "none", border: "0px" }} onClick={onhendl}>{<ArrowLeftIcon color="white" />}</button>

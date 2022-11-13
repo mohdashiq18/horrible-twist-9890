@@ -24,8 +24,8 @@ const imgData=[["https://images.urbndata.com/is/image/Anthropologie/411201756019
             </Grid>
             
             <Flex justifyContent="space-around" marginTop="-70px">
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop new clothing & accessories</Link>
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop jacckets & coat</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop new clothing & accessories</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop jacckets & coat</Link>
             </Flex>
             <Grid mt={20} templateColumns='repeat(3, 1fr)' gap={6}>
                 <Image src="https://images.ctfassets.net/5de70he6op10/3w8rGkLqypJyMI94W5jAz6/b1a47476e9fa52841b06bcbf50e8c337/LS_M2a.jpg?w=856&q=80&fm=webp"/>
@@ -33,9 +33,9 @@ const imgData=[["https://images.urbndata.com/is/image/Anthropologie/411201756019
                 <Image src="https://images.ctfassets.net/5de70he6op10/28WqNdcNbssmLjzWncssjE/a9ef1a745783404fb8f054796735b3b1/LS_M2c.jpg?w=856&q=80&fm=webp"/>
             </Grid>
             <Flex justifyContent="space-around" marginTop="-70px">
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop sweaters</Link>
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop cold-weather accessories</Link>
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop pants</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop sweaters</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop cold-weather accessories</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop pants</Link>
             </Flex>
             <Grid mt={20}>
                 <Image  src={Ima[count]}/>
@@ -45,14 +45,14 @@ const imgData=[["https://images.urbndata.com/is/image/Anthropologie/411201756019
                 <button style={{backgroundColor:"white",padding:"6px"}} disabled={count>=2} onClick={()=>setCount(count+1)}>{<ChevronRightIcon fontSize="2xl"/>}</button>
             </Flex>
             <Flex justifyContent="space-around" marginTop="200px">
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop gifts for the home </Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop gifts for the home </Link>
             
             </Flex>
             <Grid mt={20}>
                 <Image src="https://images.ctfassets.net/5de70he6op10/6YcDf5MI12J4gw9cOaz9WP/70f858a9574c2e0ff43b2b7bdc6e61af/LS_M4.jpg?w=2641&q=80&fm=webp"/>
             </Grid>
             <Flex justifyContent="space-around" marginTop="-70px">
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop dresses</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop dresses</Link>
             
             </Flex>
 
@@ -62,14 +62,38 @@ const imgData=[["https://images.urbndata.com/is/image/Anthropologie/411201756019
                 <Image src="https://images.ctfassets.net/5de70he6op10/7xfJSO2og2DDZa4IpAilFz/882783ed4607343a932d4d975fe22be6/RR_Furniture.jpg?w=856&q=80&fm=webp"/>
             </Grid>
             <Flex justifyContent="space-around" marginTop="-70px">
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop kitchen & dining</Link>
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop bedding, pillows & throws</Link>
-            <Link style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop furniture</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop kitchen & dining</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop bedding, pillows & throws</Link>
+            <Link to="/New_cloths" style={{paddingRight:"20px",paddingLeft:"20px",paddingTop:"10px",paddingBottom:"10px",backgroundColor:"white",fontSize:"13px"}}>shop furniture</Link>
             </Flex>
             <Text borderBottom="1px solid black" pb={3} fontSize="xl" pt={5} mt={10}>
             You May Also Like
             </Text>
             
+            <Grid templateColumns='repeat(5, 1fr)' gap={6} mt={8}>
+                <Link>
+                <Image src="https://images.urbndata.com/is/image/Anthropologie/79660395_066_b?$an-category$&qlt=80&fit=constrain"/>
+                
+                <Text mt={2} fontSize="sm">By Anthropologie Rosette Tulle Sleeves</Text>
+                </Link>
+                <Box>
+                <Image src="https://images.urbndata.com/is/image/Anthropologie/4114383100025_090_b2?$an-category$&qlt=80&fit=constrain"/>
+                <Text mt={2} fontSize="sm">Aldomartins Scenic Swearter Coat</Text>
+                </Box>
+                <Box>
+                <Image src="https://images.urbndata.com/is/image/Anthropologie/4112257230163_001_b2?$an-category$&qlt=80&fit=constrain"/>
+                <Text mt={2} fontSize="sm">Sunday in Brooklyn Pearl Ponte Top</Text>
+                </Box>
+                <Box>
+                <Image src="https://images.urbndata.com/is/image/Anthropologie/4130647160147_009_b2?$an-category$&qlt=80&fit=constrain"/>
+                <Text mt={2} fontSize="sm">By Anthropologie Printed Wrap Dress</Text>
+                </Box>
+                <Box>
+                <Image src="https://images.urbndata.com/is/image/Anthropologie/4122382010315_001_b2?$an-category$&qlt=80&fit=constrain"/>
+                <Text mt={2} fontSize="sm">The Jada High-Risk Wide-Leg Jeans</Text>
+                </Box>
+                
+            </Grid>
             
         </Box>
         </>
